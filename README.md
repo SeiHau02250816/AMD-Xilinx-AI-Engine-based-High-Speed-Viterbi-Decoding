@@ -1,1 +1,8 @@
 # AMD-Xilinx-AI-Engine-based-High-Speed-Viterbi-Decoding
+This project focuses on implementing the Viterbi Decoding algorithm using AMD's AI Engine, specifically targeting the VEK280 evaluation kit. The primary objective is to accelerate performance through parallel processing, addressing the intensive computational demands of the Viterbi algorithm, which plays a critical role in decoding convolutional codes within digital communication systems. By transitioning the algorithm from C++ to AI Engine code, the project aims to significantly improve execution speed and efficiency, achieving an average speedup of 27.65 times compared to traditional CPU implementations, all while preserving high decoding accuracy.
+
+For benchmarking, the C++ code was executed on an Intel i9-12900H CPU running at full performance, using Visual Studio as the development environment. However, direct deployment on the VEK280 evaluation kit was not feasible due to current model limitations, which caused memory allocation errors during runtime, indicating a mismatch between the memory demands of the algorithm and the available on-chip resources.
+
+To simulate and optimize the AI Engine code, AMD Xilinx Vitis 2024.1 was utilized, allowing for detailed performance analysis and refinement. This research not only demonstrates the practical applications of the Viterbi Decoding algorithm but also underscores the advantages of specialized hardware for real-time processing, showcasing how AI Engine technology can optimize complex algorithms.
+
+Feedback and suggestions are welcome!
